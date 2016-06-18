@@ -1,0 +1,28 @@
+{
+  "recipes":{
+    "Strawberry_Banana_Blueberry":{
+      "name": "Strawberry Banana Blueberry Green Smoothie",
+      "liquid": "1/2 cup water",
+      "greens": "2 cups spinach",
+      "fresh ingredients": "2 oranges, peeled and seeded",
+      "frozen ingredients": "1 cup strawberries, 1 cup blueberries, 2 bananas",
+      "directions": "1. Blend spinach, orange juice and water until smooth 2. Next add the frozen fruits and blend again."
+    },
+    "Pineapple_Mojito":{
+      "name": "Pineapple Mojito",
+      "liquid": "2 cups coconut water",
+      "greens": "2 cups kale",
+      "fresh ingredients": "juice of 1 lime, 1/4 cup fresh mint leaves",
+      "frozen ingredients": "3 cups pineapple",
+      "directions": "1. Blend kale and coconut water until smooth. 2. Add remaining ingredients, and blend until smooth. Enjoy!"
+    },
+    "Strawberry_Peach_Refresher":{
+      "name": "Strawberry Peach Refresher",
+      "liquid": "2 cups unsweetened almond milk",
+      "greens": "2 cups bok choy",
+      "fresh ingredients": "",
+      "frozen ingredients": "1 cup strawberries, 2 cups peaches",
+      "directions": "1. Blend bok choy and almond milk until smooth. 2. Next add the remaining fruits and blend again."
+    }
+  }
+}

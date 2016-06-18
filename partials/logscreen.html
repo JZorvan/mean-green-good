@@ -1,0 +1,65 @@
+<div class="logscreen_container">
+
+  <ul class="pagination">
+    <li class="waves-effect" ng-hide="!modeLogin" ng-href="/#/register"><a ng-href="/#/register">Register</a></li>
+    <li class="active" ng-hide="modeLogin" ng-href="/#/register"><a ng-href="/#/register">Register</a></li>
+    <li class="waves-effect" ng-hide="modeLogin" ng-href="/#/login"><a ng-href="/#/login">Login</a></li>
+    <li class="active" ng-hide="!modeLogin" ng-href="/#/login"><a ng-href="/#/login">Login</a></li>
+  </ul>
+
+  <form id="register_user" ng-hide="modeLogin" >
+
+    <div class="col s6 reg-form">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">email</i>
+          <input type="email" autocomplete="no" ng-model="account.email">
+          <label>Email</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">security</i>
+          <input type="password" autocomplete="no" ng-model="account.password">
+          <label>Password</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <button class="btn" ng-click="register()"><i class="material-icons left">person_add</i>Register</button>
+      </div>
+    </div>
+
+  </form>
+
+  <form id="login_user" ng-hide="!modeLogin">
+
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">email</i>
+        <input type="email" autofocus="true" autocomplete="no" ng-model="account.email">
+        <label>Email</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">security</i>
+        <input type="password" autocomplete="no" ng-model="account.password">
+        <label>Password</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <button class="btn" ng-click="login()"><i class="material-icons left">person_add</i>Login</button>
+    </div>
+
+  </form>
+
+
+
+
+
+
+</div>
