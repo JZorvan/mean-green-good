@@ -18,8 +18,7 @@ app.config(function($routeProvider) {
   $routeProvider
     .when("/", {
       templateUrl: "partials/logscreen.html",
-      controller: "LogCtrl",
-      resolve: {isAuth}
+      controller: "LogCtrl"
     })
     .when("/login", {
       templateUrl: "partials/logscreen.html",
@@ -28,6 +27,16 @@ app.config(function($routeProvider) {
     .when("/register", {
       templateUrl: "partials/logscreen.html",
       controller:  "LogCtrl"
+    })
+    .when("/ourrecipes", {
+      templateUrl: "partials/stock-recipes.html",
+      controller: "StockCtrl",
+      resolve: {isAuth}
+    })
+    .when("/myrecipes", {
+      templateUrl: "partials/user-recipes.html",
+      controller: "UserRecipesCtrl",
+      resolve: {isAuth}
     })
     .when("/logout",{
       templateUrl: "partials/logscreen.html",
