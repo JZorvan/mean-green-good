@@ -71,8 +71,24 @@ app.factory("recipeStorage", function ($q, $http, firebaseURL, AuthFactory) {
     });
   };
 
+  let deleteRecipe = (itemToDelete) => {
+    return $q(function(resolve, reject){
+      $http
+        .delete(`${firebaseURL}recipes/${itemToDelete.id}.json`)
+        .success(function(objectFromFirebase){
+          resolve(objectFromFirebase);
+        });
+    });
+  };
 
+  let addRecipe = (newRecipe) => {
 
-  return {getStockRecipes:getStockRecipes, getUserRecipes:getUserRecipes, postRecipeToUser:postRecipeToUser};
+  }
+
+  let editRecipe = (itemToEdit) => {
+
+  }
+
+  return {getStockRecipes:getStockRecipes, getUserRecipes:getUserRecipes, postRecipeToUser:postRecipeToUser, deleteRecipe:deleteRecipe, editRecipe:editRecipe};
 
 });

@@ -38,6 +38,16 @@ app.config(function($routeProvider) {
       controller: "UserRecipesCtrl",
       resolve: {isAuth}
     })
+    .when("/myrecipes/add", {
+      templateUrl: "partials/recipe-form.html",
+      controller: "RecipeFormCtrl",
+      resolve: {isAuth}
+    })
+    .when("/myrecipes/edit", {
+      templateUrl: "partials/recipe-form.html",
+      controller: "RecipeFormCtrl",
+      resolve: {isAuth}
+    })
     .when("/logout",{
       templateUrl: "partials/logscreen.html",
       controller:  "LogCtrl"

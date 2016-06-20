@@ -2,14 +2,7 @@
 
 app.controller("StockCtrl", function ($scope, $location, recipeStorage) {
   $scope.stockRecipes = [];
-  // $scope.itemToAdd = {
-  //   name: "",
-  //   liquid: "",
-  //   greens: "",
-  //   fresh: "",
-  //   frozen: "",
-  //   directions: ""
-  // };
+
 
     recipeStorage.getStockRecipes().then(function(returnCollection){
         $scope.stockRecipes = returnCollection;
