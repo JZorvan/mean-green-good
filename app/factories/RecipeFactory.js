@@ -81,14 +81,33 @@ app.factory("recipeStorage", function ($q, $http, firebaseURL, AuthFactory) {
     });
   };
 
-  let addRecipe = (newRecipe) => {
-
-  }
+  let addNewRecipe = (newRecipe) => {
+    let user = AuthFactory.getUser();
+      return $q(function(resolve, reject) {
+        $http
+          .post(`${firebaseURL}recipes.json`,
+          JSON.stringify({
+            name: newRecipe.name,
+            liquid: newRecipe.liquid,
+            greens: newRecipe.greens,
+            fresh: newRecipe.fresh,
+            frozen: newRecipe.frozen,
+            directions: newRecipe.directions,
+            uid: user.uid
+          })
+      )
+          .success(
+            function(objectFromFirebase) {
+              resolve(objectFromFirebase);
+            }
+          );
+      });
+  };
 
   let editRecipe = (itemToEdit) => {
 
   }
 
-  return {getStockRecipes:getStockRecipes, getUserRecipes:getUserRecipes, postRecipeToUser:postRecipeToUser, deleteRecipe:deleteRecipe, editRecipe:editRecipe};
+  return {getStockRecipes:getStockRecipes, getUserRecipes:getUserRecipes, postRecipeToUser:postRecipeToUser, deleteRecipe:deleteRecipe, addNewRecipe:addNewRecipe, editRecipe:editRecipe};
 
 });
