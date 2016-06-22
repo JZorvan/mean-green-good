@@ -104,10 +104,45 @@ app.factory("recipeStorage", function ($q, $http, firebaseURL, AuthFactory) {
       });
   };
 
-  let editRecipe = (itemToEdit) => {
+  let getSingleRecipe = (selectedRecipe) => {
+    return $q(function(resolve, reject){
+      $http
+        .get(`${firebaseURL}recipes/${selectedRecipe.id}.json`)
+        .success(function(returnObject){
+          console.log("selectedRecipe", selectedRecipe);
+          console.log("selectedRecipe.id", selectedRecipe.id);
 
-  }
 
-  return {getStockRecipes:getStockRecipes, getUserRecipes:getUserRecipes, postRecipeToUser:postRecipeToUser, deleteRecipe:deleteRecipe, addNewRecipe:addNewRecipe, editRecipe:editRecipe};
+          resolve(returnObject);
+        })
+        .error(function(error){
+          reject(error);
+        });
+    });
+  };
+
+  let updateRecipe = (recipeId, newRecipe) => {
+    let user = AuthFactory.getUser();
+
+    return $q(function(resolve, reject) {
+      $http
+        .put(`${firebaseURL}recipes/${recipeId}.json`,
+          JSON.stringify({
+            name: newRecipe.name,
+            liquid: newRecipe.liquid,
+            greens: newRecipe.greens,
+            fresh: newRecipe.fresh,
+            frozen: newRecipe.frozen,
+            directions: newRecipe.directions,
+            uid: user.uid
+          })
+        )
+        .success(function(objectFromFirebase){
+          resolve(objectFromFirebase);
+        });
+    });
+  };
+
+  return {getStockRecipes:getStockRecipes, getUserRecipes:getUserRecipes, postRecipeToUser:postRecipeToUser, deleteRecipe:deleteRecipe, addNewRecipe:addNewRecipe, getSingleRecipe:getSingleRecipe, updateRecipe:updateRecipe};
 
 });

@@ -43,9 +43,9 @@ app.config(function($routeProvider) {
       controller: "NewRecipeCtrl",
       resolve: {isAuth}
     })
-    .when("/myrecipes/edit", {
+    .when("/edit", {
       templateUrl: "partials/recipe-form.html",
-      controller: "RecipeFormCtrl",
+      controller: "EditRecipeCtrl",
       resolve: {isAuth}
     })
     .when("/logout",{

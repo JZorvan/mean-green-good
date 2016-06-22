@@ -1,7 +1,7 @@
 "use strict";
 
 app.controller("NewRecipeCtrl", function($scope, $location, recipeStorage){
-  $scope.title = "New Recipe";
+  $scope.title = "Add New Recipe";
   $scope.submitButtonText = "Add Recipe";
   $scope.newRecipe = {
     name: "",
