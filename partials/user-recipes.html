@@ -13,8 +13,8 @@
           <p>{{thingy.directions}}</p>
         </div>
         <div class="card-action">
-          <button ng-click="deleteRecipe(thingy)">Delete</button>
-          <button ng-click="getSingleRecipe(thingy)">Edit</button>
+          <a class="waves-effect waves-light btn" ng-click="deleteRecipe(thingy)">Delete</a>
+          <a class="waves-effect waves-light btn" ng-click="getSingleRecipe(thingy)" ng-href="#/myrecipes/{{thingy.id}}/edit">Edit</a>
         </div>
       </div>
     </div>

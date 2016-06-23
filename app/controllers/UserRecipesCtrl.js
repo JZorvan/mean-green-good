@@ -1,10 +1,14 @@
 "use strict";
 
-app.controller("UserRecipesCtrl", function ($scope, recipeStorage) {
+app.controller("UserRecipesCtrl", function ($scope, recipeStorage, $routeParams) {
     $scope.userRecipes = [];
 
     recipeStorage.getUserRecipes().then(function(returnCollection){
         $scope.userRecipes = returnCollection;
+
+        $scope.selectedRecipe = $scope.userRecipes.filter(function(recipe){
+            return recipe.id === $routeParams.recipeId;
+        })[0];
     });
 
     $scope.deleteRecipe = function(itemToDelete){

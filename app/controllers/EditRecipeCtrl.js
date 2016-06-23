@@ -5,8 +5,7 @@ app.controller("EditRecipeCtrl", function($scope, $location, $routeParams, recip
     $scope.submitButtonText = "Update";
     $scope.newRecipe = {};
 
-    recipeStorage.getSingleRecipe($routeParams.selectedRecipe)
-
+    recipeStorage.getSingleRecipe($routeParams.recipeId)
 
         .then(function successCallback(response){
             $scope.newRecipe=response;

@@ -43,7 +43,7 @@ app.config(function($routeProvider) {
       controller: "NewRecipeCtrl",
       resolve: {isAuth}
     })
-    .when("/edit", {
+    .when("/myrecipes/:recipeId/edit", {
       templateUrl: "partials/recipe-form.html",
       controller: "EditRecipeCtrl",
       resolve: {isAuth}

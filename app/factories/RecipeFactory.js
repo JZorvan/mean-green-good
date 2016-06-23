@@ -106,11 +106,13 @@ app.factory("recipeStorage", function ($q, $http, firebaseURL, AuthFactory) {
 
   let getSingleRecipe = (selectedRecipe) => {
     return $q(function(resolve, reject){
+      console.log("selectedRecipe", selectedRecipe);
+
       $http
-        .get(`${firebaseURL}recipes/${selectedRecipe.id}.json`)
+
+        .get(`${firebaseURL}recipes/${selectedRecipe}.json`)
         .success(function(returnObject){
           console.log("selectedRecipe", selectedRecipe);
-          console.log("selectedRecipe.id", selectedRecipe.id);
 
 
           resolve(returnObject);
