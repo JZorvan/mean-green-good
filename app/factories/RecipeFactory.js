@@ -13,7 +13,9 @@ app.factory("recipeStorage", function ($q, $http, firebaseURL, AuthFactory) {
           let returnCollection = returnObject;
           Object.keys(returnCollection).forEach(function(key){
             returnCollection[key].id=key;
-            stockRecipes.push(returnCollection[key]);
+            if (returnCollection[key].uid === undefined){
+              stockRecipes.push(returnCollection[key]);
+            };
           });
           resolve(stockRecipes);
         })
