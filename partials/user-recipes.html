@@ -1,4 +1,4 @@
-<h1>Our Recipes</h1>
+<h1>My Recipes</h1>
 
       <form>
         <div class="input-field">
@@ -9,7 +9,7 @@
       </form>
 
 <div class="row">
-  <div ng-repeat="thingy in stockRecipes | filter: searchText">
+  <div ng-repeat="thingy in userRecipes | filter: searchText">
     <div class="col s12 m6">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
@@ -21,7 +21,8 @@
           <p>{{thingy.directions}}</p>
         </div>
         <div class="card-action">
-          <button ng-click="postRecipeToUser(thingy)">Add to My Recipes</button>
+          <a class="waves-effect waves-light btn" ng-click="deleteRecipe(thingy)">Delete</a>
+          <a class="waves-effect waves-light btn" ng-click="getSingleRecipe(thingy)" ng-href="#/myrecipes/{{thingy.id}}/edit">Edit</a>
         </div>
       </div>
     </div>

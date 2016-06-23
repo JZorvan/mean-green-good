@@ -1,0 +1,46 @@
+<h4>{{title}}</h4>
+<form>
+  <div class="row">
+    <div class="input-field col s12">
+      <input ng-model="newRecipe.name" placeholder="What's your smoothie called?" id="name_form" type="text" class="validate">
+      <label for="name_form">Smoothie Name:</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input ng-model="newRecipe.liquid" placeholder="2 cups almond milk, unsweetened" id="liquid_form" type="text" class="validate">
+      <label for="liquid_form">Liquid(s):</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input ng-model="newRecipe.greens" placeholder="2 cups kale" id="greens_form" type="text" class="validate">
+      <label for="greens_form">Greens:</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input ng-model="newRecipe.fresh" placeholder="1 tbsp chia seeds" id="fresh_form" type="text" class="validate">
+      <label for="fresh_form">Fresh Ingredients:</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input ng-model="newRecipe.frozen" placeholder="1 cup strawberries, 1 cup pineapple" id="frozen_form" type="text" class="validate">
+      <label for="frozen_form">Frozen Ingredients:</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <textarea ng-model="newRecipe.directions" id="directions_form" class="materialize-textarea"></textarea>
+      <label for="textarea1">Directions</label>
+    </div>
+  </div>
+  <div>
+    <button ng-click="addNewRecipe(newRecipe)">{{submitButtonText}}</button>
+  </div>
+
+</form>
+
+
+
