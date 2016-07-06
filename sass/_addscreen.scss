@@ -1,0 +1,17 @@
+.head {
+  font-family: $scrawl;
+  color: $darkgreen;
+  margin-top: 2%;
+}
+
+.recipe_form {
+  width: 80%;
+  margin: 0 auto;
+  border: 5px groove $darkgreen;
+  @include border-radius(20px);
+  background: $lime;
+  margin-top: 2%;
+  padding: 2%;
+}
+}
+

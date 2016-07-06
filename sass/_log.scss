@@ -1,0 +1,45 @@
+.logscreen_container {
+  border: 5px groove $darkgreen;
+  @include border-radius(20px);
+  background: $lime;
+  margin-top: 2%;
+  padding: 2%;
+}
+
+.active_page {
+  font-family: $scrawl;
+  background-color: $darkgreen !important;
+  color: white;
+  text-shadow: $limeshadow;
+}
+
+.inactive_page {
+  font-family: $stencil;
+  color: $darkgreen;
+}
+
+.input-field label {
+  color: $darkgreen;
+}
+
+.active {
+  color: $darkgreen !important;
+}
+
+// .log-field {
+//   color: white;
+// }
+
+.logbtn {
+  font-family: $stencil;
+  background: white;
+  color: $darkgreen;
+  font-size: 1.5em;
+  text-shadow: $limeshadow;
+}
+
+.logbtn:hover {
+  background: $darkgreen;
+  color: white;
+  text-shadow: none;
+}

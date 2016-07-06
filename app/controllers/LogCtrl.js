@@ -42,6 +42,7 @@ app.controller('LogCtrl', function ($scope, $location, $rootScope, firebaseURL, 
       .authenticate($rootScope.account)
         .then((userCreds) => {
           $scope.$apply(function() {
+            Materialize.toast(`Welcome to your smoothie headquarters!`, 4000, 'light-green darken-4');
             $location.path("/userHome");
             $rootScope.isActive = true;
           });

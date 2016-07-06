@@ -1,5 +1,6 @@
-<h4>{{title}}</h4>
+<h3 class="head center">{{title}}</h4>
 <form>
+ <div class='container recipe_form'>
   <div class="row">
     <div class="input-field col s12">
       <input ng-model="newRecipe.name" placeholder="What's your smoothie called?" id="name_form" type="text" class="validate">
@@ -33,13 +34,19 @@
   <div class="row">
     <div class="input-field col s12">
       <textarea ng-model="newRecipe.directions" id="directions_form" class="materialize-textarea"></textarea>
-      <label for="textarea1">Directions</label>
+      <label for="textarea1">Directions:</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <textarea ng-model="newRecipe.notes" id="notes_form" class="materialize-textarea"></textarea>
+      <label for="textarea1">Notes:</label>
     </div>
   </div>
   <div>
-    <button ng-click="addNewRecipe(newRecipe)">{{submitButtonText}}</button>
+    <button class="logbtn btn" ng-click="addNewRecipe(newRecipe)">{{submitButtonText}}</button>
   </div>
-
+  </div>
 </form>
 
 

@@ -1,0 +1,73 @@
+nav {
+  background-color: #98E067; }
+
+.brand-logo {
+  font-family: "Allerta Stencil", sans-serif;
+  color: white;
+  margin-left: 2%;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px #1D4700; }
+
+.second-logo {
+  font-family: "Rock Salt", cursive;
+  font-size: .5em;
+  color: #1D4700;
+  text-shadow: 1px 1px 2px white;
+  margin-left: 3%; }
+
+.link_nav {
+  font-family: "Rock Salt", cursive;
+  color: #1D4700;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px white; }
+
+.logscreen_container {
+  border: 5px groove #1D4700;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  background: #98E067;
+  margin-top: 2%;
+  padding: 2%; }
+
+.active_page {
+  font-family: "Rock Salt", cursive;
+  background-color: #1D4700 !important;
+  color: white;
+  text-shadow: 1px 1px 2px #98E067; }
+
+.inactive_page {
+  font-family: "Allerta Stencil", sans-serif;
+  color: #1D4700; }
+
+.input-field label {
+  color: #1D4700; }
+
+.active {
+  color: #1D4700 !important; }
+
+.logbtn {
+  font-family: "Allerta Stencil", sans-serif;
+  background: white;
+  color: #1D4700;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px #98E067; }
+
+.logbtn:hover {
+  background: #1D4700;
+  color: white;
+  text-shadow: none; }
+
+#toast-container {
+  font-family: "Rock Salt", cursive;
+  color: #1D4700; }
+
+.head {
+  font-family: "Rock Salt", cursive;
+  color: #1D4700;
+  margin-top: 2%; }
+
+.recipe_form {
+  width: 80%;
+  margin: 0 auto; }

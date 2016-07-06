@@ -1,0 +1,18 @@
+$lime: #98E067;
+$darkgreen: #1D4700;
+$cursive: 'Homemade Apple', cursive;
+$stencil: 'Allerta Stencil', sans-serif;
+$scrawl: 'Rock Salt', cursive;
+$whiteshadow: 1px 1px 2px white;
+$greenshadow: 1px 1px 2px $darkgreen;
+$limeshadow: 1px 1px 2px $lime;
+
+@import 'mixins';
+@import 'nav';
+@import 'log';
+@import 'toast';
+@import 'addscreen';
+
+
+
+

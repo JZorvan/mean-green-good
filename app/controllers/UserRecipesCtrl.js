@@ -13,7 +13,7 @@ app.controller("UserRecipesCtrl", function ($scope, recipeStorage, $routeParams)
 
     $scope.deleteRecipe = function(itemToDelete){
       recipeStorage.deleteRecipe(itemToDelete).then(function(response){
-        Materialize.toast(`"${itemToDelete.name}" removed from your recipes!`, 4000, 'teal');
+        Materialize.toast(`"${itemToDelete.name}" removed from your recipes!`, 4000, 'light-green darken-4');
         recipeStorage.getUserRecipes().then(function(returnCollection){
           $scope.userRecipes = returnCollection;
         });

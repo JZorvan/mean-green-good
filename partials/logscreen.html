@@ -1,10 +1,10 @@
-<div class="logscreen_container">
+<div class="logscreen_container container col s10 m8 l6">
 
-  <ul class="pagination">
-    <li class="waves-effect" ng-hide="!modeLogin" ng-href="/#/register"><a ng-href="/#/register">Register</a></li>
-    <li class="active" ng-hide="modeLogin" ng-href="/#/register"><a ng-href="/#/register">Register</a></li>
-    <li class="waves-effect" ng-hide="modeLogin" ng-href="/#/login"><a ng-href="/#/login">Login</a></li>
-    <li class="active" ng-hide="!modeLogin" ng-href="/#/login"><a ng-href="/#/login">Login</a></li>
+  <ul class="pagination center">
+    <li class="waves-effect waves-light-green inactive_page" ng-hide="!modeLogin" ng-href="/#/register"><a ng-href="/#/register">Register</a></li>
+    <li class="active active_page" ng-hide="modeLogin" ng-href="/#/register"><a ng-href="/#/register">Register</a></li>
+    <li class="waves-effect waves-light-green inactive_page" ng-hide="modeLogin" ng-href="/#/login"><a ng-href="/#/login">Login</a></li>
+    <li class="active active_page" ng-hide="!modeLogin" ng-href="/#/login"><a ng-href="/#/login">Login</a></li>
   </ul>
 
   <form id="register_user" ng-hide="modeLogin" >
@@ -13,7 +13,7 @@
       <div class="row">
         <div class="input-field col s12">
           <i class="material-icons prefix">email</i>
-          <input type="email" autocomplete="no" ng-model="account.email">
+          <input type="email" class="log_field" autocomplete="no" ng-model="account.email">
           <label>Email</label>
         </div>
       </div>
@@ -21,13 +21,13 @@
       <div class="row">
         <div class="input-field col s12">
           <i class="material-icons prefix">security</i>
-          <input type="password" autocomplete="no" ng-model="account.password">
+          <input type="password" class="log_field" autocomplete="no" ng-model="account.password">
           <label>Password</label>
         </div>
       </div>
 
-      <div class="row">
-        <button class="btn" ng-click="register()"><i class="material-icons left">person_add</i>Register</button>
+      <div class="row center">
+        <button class="btn logbtn center-align" ng-click="register()"><i class="material-icons left">person_add</i>Register</button>
       </div>
     </div>
 
@@ -38,7 +38,7 @@
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
-        <input type="email" autofocus="true" autocomplete="no" ng-model="account.email">
+        <input type="email" class="log_field" autofocus="true" autocomplete="no" ng-model="account.email">
         <label>Email</label>
       </div>
     </div>
@@ -46,13 +46,13 @@
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">security</i>
-        <input type="password" autocomplete="no" ng-model="account.password">
+        <input type="password" class="log_field" autocomplete="no" ng-model="account.password">
         <label>Password</label>
       </div>
     </div>
 
-    <div class="row">
-      <button class="btn" ng-click="login()"><i class="material-icons left">person_add</i>Login</button>
+    <div class="row center">
+      <button class="btn logbtn center-align" ng-click="login()"><i class="material-icons left">perm_identity</i>Login</button>
     </div>
 
   </form>

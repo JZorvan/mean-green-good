@@ -62,6 +62,7 @@ app.factory("recipeStorage", function ($q, $http, firebaseURL, AuthFactory) {
           fresh: itemToAdd.fresh,
           frozen: itemToAdd.frozen,
           directions: itemToAdd.directions,
+          notes: itemToAdd.notes,
           uid: user.uid
         })
       )
@@ -95,6 +96,7 @@ app.factory("recipeStorage", function ($q, $http, firebaseURL, AuthFactory) {
             fresh: newRecipe.fresh,
             frozen: newRecipe.frozen,
             directions: newRecipe.directions,
+            notes: newRecipe.notes,
             uid: user.uid
           })
       )
@@ -138,6 +140,7 @@ app.factory("recipeStorage", function ($q, $http, firebaseURL, AuthFactory) {
             fresh: newRecipe.fresh,
             frozen: newRecipe.frozen,
             directions: newRecipe.directions,
+            notes: newRecipe.notes,
             uid: user.uid
           })
         )

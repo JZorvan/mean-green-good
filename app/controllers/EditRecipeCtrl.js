@@ -15,7 +15,7 @@ app.controller("EditRecipeCtrl", function($scope, $location, $routeParams, recip
     $scope.addNewRecipe = function(){
         recipeStorage.updateRecipe($routeParams.recipeId, $scope.newRecipe)
             .then(function successCallback(response) {
-                console.log(response);
+                Materialize.toast(`"${newRecipe.name}" has been updated!`, 4000, 'light-green darken-4');
                 $location.url("/myrecipes");
             });
     };

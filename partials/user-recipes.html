@@ -1,4 +1,4 @@
-<h1>My Recipes</h1>
+<h3 class="head center">My Recipes</h3>
 
       <form>
         <div class="input-field">
@@ -18,7 +18,8 @@
           <p>{{thingy.greens}}</p>
           <p>{{thingy.fresh}}</p>
           <p>{{thingy.frozen}}</p>
-          <p>{{thingy.directions}}</p>
+          <p>Directions: {{thingy.directions}}</p>
+          <p>Notes: {{thingy.notes}}</p>
         </div>
         <div class="card-action">
           <a class="waves-effect waves-light btn" ng-click="deleteRecipe(thingy)">Delete</a>

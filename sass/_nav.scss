@@ -1,0 +1,27 @@
+nav {
+  background-color: $lime;
+}
+
+.brand-logo {
+  font-family: $stencil;
+  color: white;
+  margin-left: 2%;
+  font-size: 2.5em;
+  text-shadow: $greenshadow;
+}
+
+.second-logo {
+  font-family: $scrawl;
+  font-size: .5em;
+  color: $darkgreen;
+  text-shadow: $whiteshadow;
+  margin-left: 3%;
+}
+
+.link_nav {
+  font-family: $scrawl;
+  color: $darkgreen;
+  font-size: 1.5em;
+  text-shadow: $whiteshadow;
+}
+
