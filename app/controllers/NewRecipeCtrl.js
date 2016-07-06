@@ -5,11 +5,17 @@ app.controller("NewRecipeCtrl", function($scope, $location, recipeStorage){
   $scope.submitButtonText = "Add Recipe";
   $scope.newRecipe = {
     name: "",
-    liquid: "",
-    greens: "",
-    fresh: "",
-    frozen: "",
-    directions: "",
+    ingredient_1: "",
+    ingredient_2: "",
+    ingredient_3: "",
+    ingredient_4: "",
+    ingredient_5: "",
+    ingredient_6: "",
+    ingredient_7: "",
+    ingredient_8: "",
+    step_1: "",
+    step_2: "",
+    step_3: "",
     notes: "",
     uid: ""
   };

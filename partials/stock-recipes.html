@@ -11,17 +11,25 @@
 <div class="row">
   <div ng-repeat="thingy in stockRecipes | filter: searchText">
     <div class="col s12 m6">
-      <div class="card light-green">
-        <div class="card-content light-green-text text-darken-4">
-          <span class="card-title">{{thingy.name}}</span>
-          <p>{{thingy.liquid}}</p>
-          <p>{{thingy.greens}}</p>
-          <p>{{thingy.fresh}}</p>
-          <p>{{thingy.frozen}}</p>
-          <p>{{thingy.directions}}</p>
+      <div class="card recipe_card">
+        <div class="card-content">
+          <h5 class="card-title center">{{thingy.name}}</h5>
+          <h5 class="sub-title">Ingredients:</h5>
+          <p>{{thingy.ingredient_1}}</p>
+          <p>{{thingy.ingredient_2}}</p>
+          <p>{{thingy.ingredient_3}}</p>
+          <p>{{thingy.ingredient_4}}</p>
+          <p>{{thingy.ingredient_5}}</p>
+          <p>{{thingy.ingredient_6}}</p>
+          <p>{{thingy.ingredient_7}}</p>
+          <p>{{thingy.ingredient_8}}</p>
+          <h5 class="sub-title">Directions:</h5>
+          <p>{{thingy.step_1}}</p>
+          <p>{{thingy.step_2}}</p>
+          <p>{{thingy.step_3}}</p>
         </div>
-        <div class="card-action">
-          <button ng-click="postRecipeToUser(thingy)">Add to My Recipes</button>
+        <div class="card-action center-align">
+          <button class="btn logbtn center" ng-click="postRecipeToUser(thingy)"><i class="material-icons left">library_add</i>Add to My Recipes</button>
         </div>
       </div>
     </div>

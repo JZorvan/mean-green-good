@@ -70,4 +70,36 @@ nav {
 
 .recipe_form {
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 5px groove #1D4700;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  background: #98E067;
+  margin-top: 2%;
+  padding: 2%; }
+
+.recipe_card {
+  border: 5px groove #1D4700;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background: #98E067; }
+
+.card-content {
+  height: 400px; }
+
+.recipe_card p {
+  margin-left: 2em !important; }
+
+.card-title {
+  font-family: "Allerta Stencil", sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px #1D4700;
+  font-size: 2em !important; }
+
+.sub-title {
+  font-family: "Rock Salt", cursive;
+  font-size: 1.2em !important; }

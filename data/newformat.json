@@ -1,0 +1,34 @@
+{
+  "recipes":{
+    "Strawberry_Banana_Blueberry":{
+      "name": "Strawberry Banana Blueberry",
+      "ingredient_1": "1/2 cup water",
+      "ingredient_2": "2 cups spinach",
+      "ingredient_3": "2 oranges, peeled and seeded",
+      "ingredient_4": "1 cup strawberries, frozen",
+      "ingredient_5": "1 cup blueberries, frozen",
+      "ingredient_6": "2 bananas, frozen",
+      "step_1": "1. Blend spinach, orange juice and water until smooth.",
+      "step_2": "2. Add the frozen fruits and blend again."
+    },
+    "Pineapple_Mojito":{
+      "name": "Pineapple Mojito",
+      "ingredient_1": "2 cups coconut water",
+      "ingredient_2": "2 cups kale",
+      "ingredient_3": "juice of 1 lime",
+      "ingredient_4": "1/4 cup fresh mint leaves",
+      "ingredient_5": "3 cups pineapple, frozen",
+      "step_1": "1. Blend kale and coconut water until smooth.",
+      "step_2": "2. Add remaining ingredients, and blend until smooth."
+    },
+    "Strawberry_Peach_Refresher":{
+      "name": "Strawberry Peach Refresher",
+      "ingredient_1": "2 cups unsweetened almond milk",
+      "ingredient_2": "2 cups bok choy",
+      "ingredient_3": "1 cup strawberries, frozen",
+      "ingredient_4": "2 cups peaches, frozen",
+      "step_1": "1. Blend bok choy and almond milk until smooth.",
+      "step_2": "2. Add the remaining fruits and blend again."
+    }
+  }
+}

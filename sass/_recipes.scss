@@ -1,0 +1,24 @@
+.recipe_card {
+  border: 5px groove $darkgreen;
+  @include border-radius(5px);
+  background: $lime;
+}
+
+.card-content {
+  height: 400px;
+}
+
+.recipe_card p {
+  margin-left: 2em !important;
+}
+.card-title {
+  font-family: $stencil;
+  color: white;
+  text-shadow: $greenshadow;
+  font-size: 2em !important;
+}
+
+.sub-title {
+  font-family: $scrawl;
+  font-size: 1.2em !important;
+}
