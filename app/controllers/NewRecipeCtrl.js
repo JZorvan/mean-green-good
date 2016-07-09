@@ -23,7 +23,7 @@ app.controller("NewRecipeCtrl", function($scope, $location, recipeStorage){
   $scope.addNewRecipe = function(newRecipe){
     recipeStorage.addNewRecipe(newRecipe)
       .then(function successCallback(response) {
-        Materialize.toast(`"${newRecipe.name}" added to your recipes!`, 4000, 'light-green darken-4');
+        Materialize.toast(`"${newRecipe.name}" added to your recipes!`, 3000, 'light-green darken-4');
         $location.url("/myrecipes");
       });
   };

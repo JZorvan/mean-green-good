@@ -2,67 +2,81 @@
 <form>
  <div class='container recipe_form'>
   <div class="row">
-    <div class="input-field col s12">
-      <input ng-model="newRecipe.name" placeholder="What's your smoothie called?" id="name_form" type="text" class="validate">
+    <div class="input-field col s8 center">
+      <input ng-model="newRecipe.name" id="name_form" class="addname" type="text">
       <label for="name_form">Smoothie Name:</label>
     </div>
   </div>
   <div class="row">
-    <div class="input-field col s12">
-      <input ng-model="newRecipe.liquid" placeholder="2 cups almond milk, unsweetened" id="liquid_form" type="text" class="validate">
-      <label for="liquid_form">Liquid(s):</label>
+    <div class="input-field col s6">
+      <input ng-model="newRecipe.ingredient_1" id="ingredient_form" type="text">
+      <label for="ingredient_form">Ingredient:</label>
+    </div>
+    <div class="input-field col s6">
+      <input ng-model="newRecipe.ingredient_2" id="ingredient_form" type="text">
+      <label for="ingredient_form">Ingredient:</label>
     </div>
   </div>
   <div class="row">
-    <div class="input-field col s12">
-      <input ng-model="newRecipe.greens" placeholder="2 cups kale" id="greens_form" type="text" class="validate">
-      <label for="greens_form">Greens:</label>
+    <div class="input-field col s6">
+      <input ng-model="newRecipe.ingredient_3" id="ingredient_form" type="text">
+      <label for="ingredient_form">Ingredient:</label>
+    </div>
+    <div class="input-field col s6">
+      <input ng-model="newRecipe.ingredient_4" id="ingredient_form" type="text">
+      <label for="ingredient_form">Ingredient:</label>
     </div>
   </div>
   <div class="row">
-    <div class="input-field col s12">
-      <input ng-model="newRecipe.fresh" placeholder="1 tbsp chia seeds" id="fresh_form" type="text" class="validate">
-      <label for="fresh_form">Fresh Ingredients:</label>
+    <div class="input-field col s6">
+      <input ng-model="newRecipe.ingredient_5" id="ingredient_form" type="text">
+      <label for="ingredient_form">Ingredient:</label>
+    </div>
+    <div class="input-field col s6">
+      <input ng-model="newRecipe.ingredient_6" id="ingredient_form" type="text">
+      <label for="ingredient_form">Ingredient:</label>
     </div>
   </div>
   <div class="row">
-    <div class="input-field col s12">
-      <input ng-model="newRecipe.frozen" placeholder="1 cup strawberries, 1 cup pineapple" id="frozen_form" type="text" class="validate">
-      <label for="frozen_form">Frozen Ingredients:</label>
+    <div class="input-field col s6">
+      <input ng-model="newRecipe.ingredient_7" id="ingredient_form" type="text">
+      <label for="ingredient_form">Ingredient:</label>
+    </div>
+    <div class="input-field col s6">
+      <input ng-model="newRecipe.ingredient_8" id="ingredient_form" type="text">
+      <label for="ingredient_form">Ingredient:</label>
     </div>
   </div>
   <div class="row">
-    <p>Directions:</p>
+    <div class="input-field col s8">
+      <input ng-model="newRecipe.step_1" id="step_form" type="text">
+      <label for="step_form">Step #1:</label>
+    </div>
+  </div>
+
+  <div class="center">
   </div>
   <div class="row">
-    <div class="input-field col s12">
-      <input ng-model="newRecipe.step_1" placeholder="1. Add.." id="step_1" type="text" class="validate">
+    <div class="input-field col s8">
+      <input ng-model="newRecipe.step_2" id="step_form" type="text">
+      <label for="step_form">Step #2:</label>
     </div>
   </div>
   <div class="row">
-    <div class="input-field col s12">
-      <input ng-model="newRecipe.step_2" placeholder="2. Blend.." id="step_2" type="text" class="validate">
+    <div class="input-field col s8">
+      <input ng-model="newRecipe.step_3" id="step_form" type="text">
+      <label for="step_form">Step #3:</label>
     </div>
   </div>
   <div class="row">
-    <div class="input-field col s12">
-      <input ng-model="newRecipe.step_3" placeholder="3. Add.." id="step_3" type="text" class="validate">
-    </div>
-  </div>
-<!--   <div class="row">
-    <div class="input-field col s12">
-      <textarea ng-model="newRecipe.step_3" id="d class="materialize-textarea"></textarea>
-      <label for="textarea1">Directions:</label>
-    </div>
-  </div> -->
-  <div class="row">
-    <div class="input-field col s12">
+    <div class="input-field col s8">
       <textarea ng-model="newRecipe.notes" id="notes_form" class="materialize-textarea"></textarea>
-      <label for="textarea1">Notes:</label>
+      <label for="notes_form">Notes:</label>
     </div>
   </div>
   <div>
-    <button class="logbtn btn" ng-click="addNewRecipe(newRecipe)">{{submitButtonText}}</button>
+    <button class="logbtn btn center-align center waves-effect waves-green" ng-click="addNewRecipe(newRecipe)">{{submitButtonText}}</button>
+  </div>
   </div>
   </div>
 </form>

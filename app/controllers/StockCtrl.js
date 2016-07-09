@@ -12,7 +12,7 @@ app.controller("StockCtrl", function ($scope, $location, recipeStorage) {
     $scope.postRecipeToUser = (thingy) => {
 
         recipeStorage.postRecipeToUser(thingy).then(() => {
-            Materialize.toast(`"${thingy.name}" has been added to your recipes!`, 4000, 'light-green darken-4');
+            Materialize.toast(`"${thingy.name}" has been added to your recipes!`, 1000, 'light-green darken-4');
         });
     };
 });
